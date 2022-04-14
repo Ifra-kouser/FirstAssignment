@@ -1,0 +1,198 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 16px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+div{
+    background-image: url(images/bg-pattern-desktop.svg);
+    background-repeat: no-repeat;
+    background-position: fixed;
+    background-size: cover;
+}
+.logo{
+    padding: 30px;
+}
+.model{
+    width: 100vw;
+    height: 35vh;
+    margin-bottom: 25px;
+}
+h1, p, form{
+    text-align: center;
+}
+h1{
+    font-size: 2.8rem;
+    letter-spacing: 10px;
+    margin-bottom: 15px;
+}
+span{
+    font-weight: 200;
+    color: rgb(194, 111, 109);
+}
+p{
+    color: rgb(194, 111, 109);
+    font-weight: 600;
+    line-height: 25px;
+    margin-bottom: 25px;
+}
+input{
+    width: 75vw;
+    
+    padding: 13px;
+    border-radius: 50px;
+    font-size: 1rem;
+    background-color: transparent;
+    
+}
+button{
+    background-color:rgb(243, 143, 141) ;
+    padding: 12px;
+    border-radius: 50px;
+    width: 75px;
+    position: absolute;
+    top: 0;
+    right: 12%;
+    border: none;
+
+}
+form{
+    position: relative;
+}
+button:hover{
+    color: rgb(240, 230, 232);
+}
+input::placeholder{
+    color: rgb(224, 137, 151);
+    padding-left: 20px;
+}
+.para-lap{
+    display: none;
+}
+
+@media only screen and (min-width: 600px) {
+    .logo{
+        padding: 50px;
+    }
+    .model{
+        width: 100vw;
+        height: 35vh;
+        margin-bottom: 30px;
+    }
+    h1, p, form{
+        text-align: center;
+    }
+    h1{
+        font-size: 5rem;
+        letter-spacing: 25px;
+        margin-bottom: 20px;
+    }
+  
+    p{
+        color: rgb(194, 111, 109);
+        font-weight: 600;
+        line-height: 40px;
+        margin-bottom: 45px;
+        font-size: 2rem;
+    }
+   
+    input{
+        width: 75vw;
+        
+        padding: 25px;
+        border-radius: 50px;
+        font-size: 2rem;
+        background-color: transparent;
+        
+    }
+    button{
+        background-color:rgb(252, 200, 199) ;
+        padding: 35px;
+        border-radius: 50px;
+        width: 120px;
+        position: absolute;
+        top: 0;
+        right: 12%;
+        border: none;
+    }
+
+}
+
+@media only screen and (min-width: 1100px){
+    #model-id{
+        display: none;
+    }
+    
+    .left{
+        background-image: url("images/bg-pattern-desktop.svg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 60%;
+        height: 100vh;
+        float: left;
+        
+    }
+    .right{
+        background-image: url("images/hero-desktop.jpg");
+        float: right;
+        width: 40%;
+        height: 100vh;
+        background-repeat: no-repeat;
+        background-size: cover ;
+    }
+    .logo{
+        margin-left: 45px;
+    }
+   
+    h1, .para-lap, form{
+        text-align: left;
+        margin-left: 110px;
+    }
+    h1{
+        font-size: 4rem;
+        margin-top: 50px;
+        letter-spacing: 15px;
+        
+    }
+    .para-mob{
+        display: none;
+    }
+    .para-lap{
+        display: block;
+        font-size: 1rem;
+        line-height: 30px;
+        margin-bottom: 50px;
+    }
+    input{
+        width: 60%;
+        padding: 15px;
+        border-radius: 50px;
+        border: 2px solid grey;
+        font-size: 1rem;
+        background-color: transparent;
+    }
+ 
+    button{
+        background-color:rgb(245, 133, 131) ;
+        padding: 15px;
+        
+        border-radius: 50px;
+        width: 100px;
+        position: absolute;
+        top: 0;
+        right: 20vw;
+        bottom: 0;
+        border: none;
+    }
+    form{
+        position: relative;
+        left:0;
+        top: 0;
+        right: 0;
+        bottom:0;
+    }
+}
+
